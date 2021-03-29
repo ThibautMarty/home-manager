@@ -3912,7 +3912,7 @@ for a list of available themes.
 </p><p><span class="emphasis"><em>Type:</em></span> submodule</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
         {
-        arrays = "1;39"; false = "0;39"; null = "1;30"; numbers = "0;39"; objects = "1;39"; strings = "0;32"; true = "0;39"; 
+        arrays = "1;37"; false = "0;37"; null = "1;30"; numbers = "0;37"; objects = "1;37"; strings = "0;32"; true = "0;37"; 
         }
     
       </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">{
@@ -4501,6 +4501,28 @@ All string options are quoted with double quotes.
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.lsd.enableAliases"></a><a class="term" href="options.html#opt-programs.lsd.enableAliases"><code class="option">programs.lsd.enableAliases</code></a></span></dt><dd><p>Whether to enable recommended lsd aliases.
 </p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lsd.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/programs/lsd.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.lsd.settings"></a><a class="term" href="options.html#opt-programs.lsd.settings"><code class="option">programs.lsd.settings</code></a></span></dt><dd><p>Configuration written to
+<code class="filename">~/.config/lsd/config.yaml</code>. See
+<a class="link" href="https://github.com/Peltoche/lsd#config-file-content" target="_top">https://github.com/Peltoche/lsd#config-file-content</a>
+for supported values.
+</p><p><span class="emphasis"><em>Type:</em></span> YAML value</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        
+        {
+        
+        }
+    
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        
+        {
+        date = "relative"; ignore-globs = 
+        [
+        ".git" ".hg" 
+        ]
+    ; 
+        }
+    
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/lsd.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/lsd.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.mako.enable"></a><a class="term" href="options.html#opt-programs.mako.enable"><code class="option">programs.mako.enable</code></a></span></dt><dd><p>Whether to enable Mako, lightweight notification daemon for Wayland
@@ -5985,6 +6007,11 @@ a key is bound (via <code class="literal">bindings.default</code> or
     
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/qutebrowser.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/qutebrowser.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.qutebrowser.loadAutoconfig"></a><a class="term" href="options.html#opt-programs.qutebrowser.loadAutoconfig"><code class="option">programs.qutebrowser.loadAutoconfig</code></a></span></dt><dd><p>Load settings configured via the GUI.
+</p><p><span class="emphasis"><em>Type:</em></span> boolean</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        false
+      </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/qutebrowser.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/programs/qutebrowser.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.qutebrowser.searchEngines"></a><a class="term" href="options.html#opt-programs.qutebrowser.searchEngines"><code class="option">programs.qutebrowser.searchEngines</code></a></span></dt><dd><p>Search engines that can be used via the address bar. Maps a search
 engine name (such as <code class="literal">DEFAULT</code>, or
 <code class="literal">ddg</code>) to a URL with a <code class="literal">{}</code>
@@ -6937,7 +6964,7 @@ If that's not set, url hints will be disabled.
 </p><p><span class="emphasis"><em>Type:</em></span> null or string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         null
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
-        "\${pkgs.xdg_utils}/xdg-open"
+        "\${pkgs.xdg-utils}/xdg-open"
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/termite.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/termite.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.termite.clickableUrl"></a><a class="term" href="options.html#opt-programs.termite.clickableUrl"><code class="option">programs.termite.clickableUrl</code></a></span></dt><dd><p>Auto-detected URLs can be clicked on to open them in  your browser.
@@ -7478,7 +7505,7 @@ manually set any options not listed above.
                     &lt;home-manager/modules/programs/vscode.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.vscode.package"></a><a class="term" href="options.html#opt-programs.vscode.package"><code class="option">programs.vscode.package</code></a></span></dt><dd><p>Version of Visual Studio Code to install.
 </p><p><span class="emphasis"><em>Type:</em></span> package</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
-        <em class="replaceable"><code>(build of vscode-1.53.2)</code></em>
+        <em class="replaceable"><code>(build of vscode-1.54.3)</code></em>
       </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">pkgs.vscodium</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/programs/vscode.nix#blob-path" target="_top">
                     &lt;home-manager/modules/programs/vscode.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-programs.vscode.extensions"></a><a class="term" href="options.html#opt-programs.vscode.extensions"><code class="option">programs.vscode.extensions</code></a></span></dt><dd><p>The extensions Visual Studio Code should be started with.
@@ -8536,7 +8563,23 @@ but are substituted anywhere on a line.
         null
       </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
         "gnome"
-      </code></p><p><span class="emphasis"><em>Related packages:</em></span> </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="literal">pkgs.qgnomeplatform</code> (qgnomeplatform-0.6.1): QPlatformTheme for a better Qt application inclusion in GNOME</p></li><li class="listitem"><p><code class="literal">pkgs.libsForQt5.qtstyleplugins</code> (qtstyleplugins-2017-03-11): Additional style plugins for Qt5, including BB10, GTK, Cleanlooks, Motif, Plastique</p></li></ul></div><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
+      </code></p><p><span class="emphasis"><em>Related packages:</em></span> </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="literal">pkgs.qgnomeplatform</code> (qgnomeplatform-0.6.1): QPlatformTheme for a better Qt application inclusion in GNOME</p></li><li class="listitem"><p><code class="literal">pkgs.libsForQt5.qtstyleplugins</code> (qtstyleplugins-unstable-2017-03-11): Additional style plugins for Qt5, including BB10, GTK, Cleanlooks, Motif, Plastique</p></li></ul></div><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/misc/qt.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-qt.style.package"></a><a class="term" href="options.html#opt-qt.style.package"><code class="option">qt.style.package</code></a></span></dt><dd><p>Theme package to be used in Qt5 applications.</p><p><span class="emphasis"><em>Type:</em></span> null or package</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        null
+      </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">pkgs.adwaita-qt</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/misc/qt.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-qt.style.name"></a><a class="term" href="options.html#opt-qt.style.name"><code class="option">qt.style.name</code></a></span></dt><dd><p>Selects the style to use for Qt5 applications.</p><p>The options are
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><code class="literal">adwaita</code>, </span><span class="term"><code class="literal">adwaita-dark</code></span></dt><dd><p>Use Adwaita Qt style with
+      <a class="link" href="https://github.com/FedoraQt/adwaita-qt" target="_top">adwaita</a>
+    </p></dd><dt><span class="term"><code class="literal">cleanlooks</code>, </span><span class="term"><code class="literal">gtk2</code>, </span><span class="term"><code class="literal">motif</code>, </span><span class="term"><code class="literal">plastique</code></span></dt><dd><p>Use styles from
+      <a class="link" href="https://github.com/qt/qtstyleplugins" target="_top">qtstyleplugins</a>
+    </p></dd></dl></div><p>
+</p><p><span class="emphasis"><em>Type:</em></span> null or string</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        null
+      </code></p><p><span class="emphasis"><em>Example:</em></span> <code class="literal">
+        "adwaita-dark"
+      </code></p><p><span class="emphasis"><em>Related packages:</em></span> </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="literal">pkgs.adwaita-qt</code> (adwaita-qt-1.1.4): A style to bend Qt applications to look like they belong into GNOME Shell</p></li><li class="listitem"><p><code class="literal">pkgs.libsForQt5.qtstyleplugins</code> (qtstyleplugins-unstable-2017-03-11): Additional style plugins for Qt5, including BB10, GTK, Cleanlooks, Motif, Plastique</p></li></ul></div><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/misc/qt.nix#blob-path" target="_top">
                     &lt;home-manager/modules/misc/qt.nix&gt;
                 </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.blueman-applet.enable"></a><a class="term" href="options.html#opt-services.blueman-applet.enable"><code class="option">services.blueman-applet.enable</code></a></span></dt><dd><p>Whether to enable the Blueman applet.
 </p><p>
@@ -8655,7 +8698,7 @@ percent symbol).
         "16x16"
       </code></p><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/dunst.nix#blob-path" target="_top">
                     &lt;home-manager/modules/services/dunst.nix&gt;
-                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.dunst.settings"></a><a class="term" href="options.html#opt-services.dunst.settings"><code class="option">services.dunst.settings</code></a></span></dt><dd><p>Configuration written to ~/.config/dunstrc</p><p><span class="emphasis"><em>Type:</em></span> attribute set of attribute set of string or boolean or signed integer or list of stringsss</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-services.dunst.settings"></a><a class="term" href="options.html#opt-services.dunst.settings"><code class="option">services.dunst.settings</code></a></span></dt><dd><p>Configuration written to ~/.config/dunst/dunstrc</p><p><span class="emphasis"><em>Type:</em></span> attribute set of attribute set of string or boolean or signed integer or list of stringsss</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         
         {
         
@@ -12865,5 +12908,23 @@ version used to build xmonad and the packages listed in
 </p><p><span class="emphasis"><em>Type:</em></span> unspecified</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
         pkgs.haskellPackages
       </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">pkgs.haskell.packages.ghc784</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/xmonad.nix#blob-path" target="_top">
+                    &lt;home-manager/modules/services/window-managers/xmonad.nix&gt;
+                </a></code></td></tr></table></dd><dt><span class="term"><a id="opt-xsession.windowManager.xmonad.libFiles"></a><a class="term" href="options.html#opt-xsession.windowManager.xmonad.libFiles"><code class="option">xsession.windowManager.xmonad.libFiles</code></a></span></dt><dd><p>Additional files that will be saved in
+<code class="filename">~/.xmonad/lib/</code> and included in the configuration
+build. The keys are the file names while the values are paths to the
+contents of the files.
+</p><p><span class="emphasis"><em>Type:</em></span> attribute set of paths</p><p><span class="emphasis"><em>Default:</em></span> <code class="literal">
+        
+        {
+        
+        }
+    
+      </code></p><p><span class="emphasis"><em>Example:</em></span> </p><pre class="programlisting">{
+  "Tools.hs" = pkgs.writeText "Tools.hs" ''
+     module Tools where
+     screenshot = "scrot"
+   '';
+}
+</pre><p><span class="emphasis"><em>Declared by:</em></span></p><table border="0" summary="Simple list" class="simplelist"><tr><td><code class="filename"><a class="filename" href="https://github.com/nix-community/home-manager/blob/master/modules/services/window-managers/xmonad.nix#blob-path" target="_top">
                     &lt;home-manager/modules/services/window-managers/xmonad.nix&gt;
                 </a></code></td></tr></table></dd></dl></div></div><div class="navfooter"><hr /><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="index.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="nixos-options.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Home Manager Manual </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Appendix B. NixOS Module Options</td></tr></table></div></body></html>
