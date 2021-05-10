@@ -265,6 +265,8 @@
 
 /modules/services/unison.nix                          @pacien
 
+/modules/services/window-managers/herbstluftwm.nix    @ThibautMarty
+
 /modules/services/window-managers/i3-sway/i3.nix      @sumnerevans
 /tests/modules/services/window-managers/i3            @sumnerevans
 

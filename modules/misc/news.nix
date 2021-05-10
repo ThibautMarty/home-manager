@@ -1980,6 +1980,14 @@ in
           A new module is available: 'programs.nix-index'.
         '';
       }
+
+      {
+        time = "2021-05-10T10:00:00+00:00";
+        condition = hostPlatform.isLinux;
+        message = ''
+          A new module is available: 'xsession.windowManager.herbstluftwm'.
+        '';
+      }
     ];
   };
 }

@@ -207,6 +207,7 @@ let
     (loadModule ./services/unison.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/window-managers/awesome.nix { })
     (loadModule ./services/window-managers/bspwm/default.nix { condition = hostPlatform.isLinux; })
+    (loadModule ./services/window-managers/herbstluftwm.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/window-managers/i3-sway/i3.nix { })
     (loadModule ./services/window-managers/i3-sway/sway.nix { condition = hostPlatform.isLinux; })
     (loadModule ./services/window-managers/xmonad.nix { })
